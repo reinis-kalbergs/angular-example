@@ -1,0 +1,101 @@
+.login-form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+//direction row, tad horizontālā virzienā ir justify-content, vertikālā align-itmes
+//direction column, tad horizontālā virzienā ir align-itmes, vertikālā  justify-content
+
+.login-form-container {
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  border-radius: 4px;
+}
+
+.login-form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 300px;
+  border-radius: 0 4px 4px 0;
+  transition: font-size .3s ease-in-out;
+}
+
+// Form fields
+.form-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 2px;
+}
+
+.form-text-input, .country-select {
+  width: 100%;
+  height: 30px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0, rgba(27, 31, 35, 0.15) 0 0 0 1px;
+  border-radius: 4px;
+  padding: 0 5px;
+  outline: none;
+}
+
+// Button
+.login-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-btn {
+  border: none;
+  padding: 5px 15px;
+  background-color: cornflowerblue;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: background-color .2s ease-in-out;
+
+  &:hover {
+    background-color: #4e82ea;
+  }
+}
+
+// Error
+.form-error {
+  color: firebrick;
+  position: absolute;
+  bottom: -22px;
+}
+
+.input-error {
+  box-shadow: rgba(253, 39, 39, 0.82) 0 1px 3px 0, rgba(253, 39, 39, 0.82) 0 0 0 1px;
+}
+
+// Image
+
+.form-image {
+  height: auto;
+  max-width: 220px;
+  border-radius: 4px 0 0 4px;
+}
+
+@media screen and (max-width: 520px) {
+  .form-image-container {
+    display: none;
+  }
+
+  .login-form-container {
+    width: 100%;
+  }
+
+  .login-form {
+    width: 100%;
+    font-size: 16px;
+    padding: 20px;
+  }
+}
