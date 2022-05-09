@@ -1,0 +1,31 @@
+.card {
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+  max-width: 350px;
+  padding: 20px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+
+.card-image {
+  border-radius: 4px;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.read-more-btn {
+  //border: none;
+  //background-color: transparent;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

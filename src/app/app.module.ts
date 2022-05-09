@@ -15,6 +15,13 @@ import {
 } from './components/planner/planner-with-checkboxes-and-filter/planner-with-checkboxes-and-filter.component';
 import {FormsComponent} from './components/forms/forms.component';
 import {LoginFormComponent} from './components/forms/login-form/login-form.component';
+import {HttpClientModule} from "@angular/common/http";
+import {CharactersComponent} from './components/characters/characters.component';
+import {CharacterCardComponent} from './components/characters/character-card/character-card.component';
+import {CharacterComponent} from './components/characters/character/character.component';
+import {PeopleComponent} from './components/people/people.component';
+import {PeopleTableComponent} from './components/people/people-table/people-table.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -25,13 +32,20 @@ import {LoginFormComponent} from './components/forms/login-form/login-form.compo
     PlannerWithCheckboxesComponent,
     PlannerWithCheckboxesAndFilterComponent,
     FormsComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    CharactersComponent,
+    CharacterCardComponent,
+    CharacterComponent,
+    PeopleComponent,
+    PeopleTableComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
